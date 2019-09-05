@@ -1,6 +1,6 @@
 # 一修大师
 ![img](https://castle.womany.net/images/content/pictures/37314/content_womany_starfish_1447997688-16069-0715.jpg)
-## TG-admin
+## admin-demo
   基于iview-admin [github](https://github.com/iview/iview-admin) `https://github.com/iview/iview-admin`
   - vue-cli3 
   - webapck4 
