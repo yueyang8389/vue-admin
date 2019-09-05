@@ -1,0 +1,128 @@
+@import '../../styles/color.less';
+@active: #62B1FD;
+@icon-close-border: #CECECE;
+
+.no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.size {
+  width: 100%;
+  height: 100%;
+}
+
+.tags-nav {
+  position: relative;
+  border-bottom: 1px solid #F0F0F0;
+  .no-select;
+  .size;
+  .close-con {
+    // position: absolute;
+    // right: 0;
+    // top: 0;
+    // height: 100%;
+    // width: 42px;
+    // background: #fff;
+    // text-align: center;
+    // z-index: 10;
+    position: absolute;
+    right: 9px;
+    height: 100%;
+    background: #ffffff;
+    z-index: 10;
+    text-align: center;
+    border: 1px solid #e4e4e4;
+    margin-right: 5px;
+  }
+  .btn-con {
+    //导航条左按钮的边框
+    border:1px solid #ebebeb;
+    border-bottom: none;
+    padding-right:1px;
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    background: #fff;
+    padding-top: 3px;
+    z-index: 10;
+    button {
+      padding: 6px 0;
+      line-height: 14px;
+      text-align: center;
+    }
+    &.left-btn {
+      left: 0px;
+    }
+    &.right-btn {
+      right: 42px;
+      border-right: 1px solid #F0F0F0;
+    }
+  }
+  .scroll-outer { 
+    //导航条左按钮的间距
+    margin-left: -9px;
+    position: absolute;
+    left: 28px;
+    right: 61px;
+    top: 0;
+    bottom: 0;
+    box-shadow: none;
+    .scroll-body {
+      padding: 0;
+      height: ~"calc(100% - 1px)";
+      display: inline-block;
+      position: absolute;
+      overflow: visible;
+      white-space: nowrap;
+      transition: left .3s ease;
+      border-right: 1px solid @tagBorderColor;
+      .ivu-tag-dot-inner {
+        transition: background .2s ease;
+      }
+    }
+    /deep/.ivu-tag {
+      padding: 0;
+      margin: 0;
+      width: 139px;
+      height: 39px;
+      line-height: 39px;
+      border-right: none;
+      border-top: none;
+      /deep/.ivu-icon-ios-close {
+        // border: 1px solid @icon-close-border;
+        // border-radius: 50%;
+        // margin-left: 10px;
+        // color: #CCCCCCFF;
+      }
+    }
+    .v2-tag-active {
+      border: none;
+      border-left: 1px solid @tagBorderColor;
+      border-top: 2px solid @active;
+      background: #fff;
+    }
+  }
+  .contextmenu {
+    position: absolute;
+    margin: 0;
+    padding: 5px 0;
+    background: #fff;
+    z-index: 100;
+    list-style-type: none;
+    border-radius: 4px;
+    box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, .3);
+    li {
+      margin: 0;
+      padding: 5px 15px;
+      cursor: pointer;
+      &:hover {
+        background: #eee;
+      }
+    }
+  }
+}
