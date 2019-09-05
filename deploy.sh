@@ -13,6 +13,6 @@ git init
 git add -A
 git commit -m 'build admin'
 
-git push -f git@github.com:yueyang8389/admin-demo.git gh-pages
+git push -f git@github.com:yueyang8389/admin-demo.git master:gh-pages
 
 cd -
